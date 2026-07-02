@@ -1,0 +1,104 @@
+# ============================================================
+# SleepTransitionCNN Configuration File
+# ============================================================
+
+project:
+  name: SleepTransitionCNN
+  version: 1.0.0
+  random_seed: 42
+  device: auto            # auto | cpu | gpu
+
+paths:
+  public_data: data/public
+  private_data: data/private
+  processed_data: data/processed
+  windows: data/windows
+  dataset: data/dataset
+
+  models: models
+
+  outputs: outputs
+  figures: outputs/figures
+  reports: outputs/reports
+  predictions: outputs/predictions
+  logs: outputs/logs
+
+dataset:
+
+  supported:
+
+    - SleepEDF
+    - MASS
+    - ISRUC
+    - PRIVATE
+
+  preferred_eeg_channels:
+
+    - EEG Fpz-Cz
+    - EEG Pz-Oz
+    - C3-A2
+    - C4-A1
+    - Fpz-Cz
+
+preprocessing:
+
+  sampling_rate: 100
+
+  bandpass:
+
+    low: 0.3
+    high: 35
+
+  notch:
+
+    frequency: 50
+
+  normalization:
+
+    method: zscore
+
+window:
+
+  length_seconds: 30
+
+  overlap_seconds: 15
+
+training:
+
+  batch_size: 32
+
+  epochs: 50
+
+  learning_rate: 0.001
+
+  validation_split: 0.20
+
+  early_stopping_patience: 10
+
+model:
+
+  name: CNN1D
+
+  filters:
+
+    - 32
+    - 64
+    - 128
+
+  kernel_sizes:
+
+    - 7
+    - 5
+    - 3
+
+  dropout: 0.5
+
+logging:
+
+  level: INFO
+
+  save_logs: true
+
+visualization:
+
+  eeg_duration: 20
