@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+outputs/
+models/
+*.h5
+*.keras
+*.ckpt
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
