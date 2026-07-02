@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 outputs/
 models/
+data/private/
 *.h5
 *.keras
 *.ckpt

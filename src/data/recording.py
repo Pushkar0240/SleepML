@@ -101,6 +101,8 @@ class Recording:
 
     metadata: Dict[str, Any] = field(default_factory=dict)
 
+    processing_history: List[str] = field(default_factory=list)
+
     # ------------------------------------------------------------------
     # Methods
     # ------------------------------------------------------------------
