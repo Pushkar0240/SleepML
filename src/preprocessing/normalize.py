@@ -10,8 +10,7 @@ Supported Methods
 2. Min-Max
 3. Robust Scaling
 
-Author:
-Pushkar Singh
+
 """
 
 from __future__ import annotations

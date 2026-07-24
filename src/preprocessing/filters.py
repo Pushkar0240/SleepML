@@ -14,8 +14,7 @@ Features
 - Notch filtering
 - Automatic configuration from config.yaml
 
-Author:
-Pushkar Singh
+
 """
 
 from __future__ import annotations

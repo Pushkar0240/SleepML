@@ -1,13 +1,11 @@
-venv/
+﻿venv/
 __pycache__/
 *.pyc
 outputs/
-models/
-data/private/
-*.h5
+data/
 *.keras
-*.ckpt
 .ipynb_checkpoints/
 .DS_Store
 .idea/
 .vscode/
+

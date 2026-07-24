@@ -5,8 +5,7 @@ Base Dataset Class
 Every supported dataset (Sleep-EDF, MASS, ISRUC,
 Private EEG) inherits from this class.
 
-Author:
-Pushkar Singh
+
 """
 
 from __future__ import annotations

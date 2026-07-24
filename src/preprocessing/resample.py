@@ -6,8 +6,7 @@ Resampling Module
 
 Resamples EEG recordings to a common sampling frequency.
 
-Author:
-Pushkar Singh
+
 """
 
 from __future__ import annotations

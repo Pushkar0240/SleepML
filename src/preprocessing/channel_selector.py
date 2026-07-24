@@ -8,8 +8,7 @@ Automatically identifies EEG, EOG, EMG, ECG and miscellaneous channels
 from an MNE Raw object and allows selecting channels for further
 processing.
 
-Author:
-Pushkar Singh
+
 """
 
 from __future__ import annotations

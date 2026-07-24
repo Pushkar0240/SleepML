@@ -1,0 +1,38 @@
+project:
+  name: SleepTransitionFramework
+  version: 1.0
+
+dataset:
+  root: data/dataset
+  train: train
+  validation: validation
+  test: test
+
+model:
+  name: cnn1d
+  input_shape: [6000,7]
+  filters: [64,128,256]
+  kernels: [7,5,3]
+  dense_units: [128,64]
+  dropout: [0.30,0.30,0.30,0.50,0.30]
+  weight_decay: 0.0001
+
+training:
+  batch_size: 32
+  epochs: 2
+  learning_rate: 0.001
+  optimizer: adam
+  seed: 42
+
+callbacks:
+  early_stop: 10
+  reduce_lr: 5
+
+logging:
+  level: INFO
+
+output:
+  root: outputs
+
+experiment:
+  name: baseline_cnn

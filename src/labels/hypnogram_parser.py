@@ -7,8 +7,7 @@ Hypnogram Parser
 Reads sleep-stage annotations from an MNE Raw object
 and converts them into SleepStage objects.
 
-Author:
-Pushkar Singh
+
 """
 
 from __future__ import annotations

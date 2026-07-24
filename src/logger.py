@@ -16,7 +16,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-from src.config import config
+from src.app_config import config
 
 
 class Logger:
